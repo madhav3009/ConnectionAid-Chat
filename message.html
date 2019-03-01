@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ConnectionAid</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+ <link rel="icon" type="image/png" href="Images/titleLogo.png">
+  
+  <style type="text/css">
+  
+  #MessageConatiner
+{   
+	background:url("Images/MessageContentWall.jpg");
+	background-position: cover;
+}
+
+#MessageBox{
+	margin: 0;
+	border:2px solid gray;
+	}
+
+.TOP{
+	position:fixed;
+    top:0;
+    width:100%;
+	height:55px;
+	background-color:#EDEDED;
+	float: left;
+    }
+
+ #DP{
+	margin-top: 6px;
+	margin-left: 5%;
+ 	width:40px;
+ 	height:40px;
+ 	border-radius:50%;
+ 	background-color:black;
+    }
+
+ #MessageNav{
+ 	margin-top: -35px;
+ 	margin-left:2%;
+ 	}
+
+ #UserName{
+ 	padding-left:8%;
+ 	font-size:20px;
+ }
+
+ #Search
+ {
+ 	margin-left: 70%;
+ }
+ 
+#MessageContent
+{
+	margin-top:50px;
+	padding:0;
+	height:900px;
+	width:100%;
+}
+
+#extras
+{
+margin-top:-30px;
+margin-left: 800px;
+}
+
+#MessageSendBarContainer{
+	position: fixed;
+	bottom:0;
+	width:100%;
+    height:60px;
+	background-color:#EDEDED;
+    }
+ #MessageSendBar
+ {
+ 	padding-left: 20%;
+    padding-top:5px;
+}  
+
+#MessageType
+{
+	border-radius:20px;
+	border-color:gray;
+	padding: 10px;
+	z-index:-1;
+}
+#send
+{
+	width: 25px;
+	height:25px;
+	padding-top: 10px;
+}
+ .me
+ { 
+ 	float:right;
+ 	width:52%;
+ 	height:60px;
+ 	background-color: black;
+ 	border-radius:15px;
+ 	margin:20px;
+ 	color:white;
+ 	padding-left: 15px;
+ 	padding-top:15px;
+ }
+
+.other
+{
+	float:left;
+	width:50%;
+	height:60px;
+	background-color: white;
+	border-radius:15px;
+	margin:20px;
+	color:black;
+	padding-left:15px;
+	padding-top:15px;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75 , #MessageNav {
+  	margin-left:18%;
+    flex-wrap: nowrap;
+ }
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75 , #extras{
+  	margin-top:-30px;
+  	margin-left: 2%;
+  }
+}
+ 
+ @media screen and (max-width: 600px) {
+  .col-25, .col-75 , #MessageSendBar{
+   
+    margin-left: -15%;
+    margin-top:1%;
+    flex-wrap: nowrap;
+  }
+}
+ 
+ @media screen and (max-width: 600px) {
+  .col-25, .col-75 , input[type=text]{
+width: 75%;
+}
+}
+
+
+
+  </style>
+</head>
+
+ 
+<body>
+<div id="MessageConatiner">
+	
+<div id="MessageBox">	
+
+<div class="TOP">
+<div id="DP"></div>
+
+
+<div id="MessageNav">
+	<span id="UserName">Abc Xyz</span>
+	<div id="extras">
+	<img id="Search" href="" src="Images/search.png">
+	<img id="Attach" href="" src="Images/attach.png">
+	<img id="Menu" href="" src="Images/menu.png">
+    </div>
+</div>
+
+</div>
+
+<div id="MessageContent">
+	<div class="me">HI</div>
+	<div class="other" >Hello</div>
+    <div class="me">How Are You?</div>
+	<div class="other">I am fine.</div>
+	<div class="me">Are you taking medicine on time?</div>
+    <div class="other">Yes</div>
+    <div class="me">Ok Take Care</div>
+
+</div>
+</div>
+</div>
+<div id="MessageSendBarContainer">
+ <div id="MessageSendBar"> 
+ <img src="Images/emoji.png">
+ <input id="MessageType"type="text" placeholder="Type a message" size="100">
+ <input type="image" id="send" src="Images/send.png">
+ <img src="Images/micro.png">
+</div>	
+</div>
+
+</body>
+</html>
